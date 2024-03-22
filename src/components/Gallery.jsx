@@ -1,4 +1,5 @@
 import React from 'react'
+import gambar1 from "../assets/6.jpg"
 
 const Gallery = () => {
     return (
@@ -7,7 +8,7 @@ const Gallery = () => {
                 <p className='text-center text-3xl font-semibold py-5'>Gallery</p>
                 <div className=' grid-cols-2 grid gap-2'>
                     <div>
-                        <img src="./src/assets/6.jpg" alt="" />
+                        <img src={gambar1} alt="" />
                     </div>
                     <div>
                         <img src="./src/assets/7.jpg" alt="" />
