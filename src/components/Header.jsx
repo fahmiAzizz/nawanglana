@@ -2,6 +2,10 @@ import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel'
 // import Countdown from 'react-countdown-simple';
+import gambar1 from "../assets/12.jpg"
+import gambar2 from "../assets/13.jpg"
+import gambar3 from "../assets/14.jpg"
+import gambar4 from "../assets/15.jpg"
 
 const Header = () => {
     return (
@@ -25,13 +29,16 @@ const Header = () => {
                 labels={false}
             >
                 <div >
-                    <img className='h-[500px]' src="./src/assets/4.jpg" />
+                    <img className='h-[500px]' src={gambar1} />
                 </div>
                 <div >
-                    <img className='h-[500px]' src="./src/assets/5.jpg" />
+                    <img className='h-[500px]' src={gambar2} />
                 </div>
                 <div >
-                    <img className='h-[500px]' src="./src/assets/6.jpg" />
+                    <img className='h-[500px]' src={gambar3} />
+                </div>
+                <div >
+                    <img className='h-[500px]' src={gambar4} />
                 </div>
             </Carousel>
         </div>

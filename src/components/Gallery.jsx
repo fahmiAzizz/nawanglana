@@ -1,5 +1,8 @@
 import React from 'react'
 import gambar1 from "../assets/6.jpg"
+import gambar2 from "../assets/7.jpg"
+import gambar3 from "../assets/8.jpg"
+import gambar4 from "../assets/9.jpg"
 
 const Gallery = () => {
     return (
@@ -11,13 +14,13 @@ const Gallery = () => {
                         <img src={gambar1} alt="" />
                     </div>
                     <div>
-                        <img src="./src/assets/7.jpg" alt="" />
+                        <img src={gambar2} alt="" />
                     </div>
                     <div>
-                        <img src="./src/assets/8.jpg" alt="" />
+                        <img src={gambar3} alt="" />
                     </div>
                     <div>
-                        <img src="./src/assets/9.jpg" alt="" />
+                        <img src={gambar4} alt="" />
                     </div>
                 </div>
             </div>

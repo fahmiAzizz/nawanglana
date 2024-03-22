@@ -1,4 +1,6 @@
 import React from 'react'
+import bridge1 from "../assets/10.jpg"
+import bridge2 from "../assets/11.jpg"
 
 const Bridge = () => {
     return (
@@ -10,7 +12,7 @@ const Bridge = () => {
                 <p className='text-3xl'>OUR WEDDING</p>
                 <p className=' px-10 py-2'>Atas Rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Anda di acara Kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada</p>
                 <div>
-                    <img className='mt-24 border-4 border-purple-400  h-64 rounded-full w-64 mx-auto' src="./src/assets/1.jpg" alt="" />
+                    <img className='mt-24 border-4 border-purple-400  h-64 rounded-full w-64 mx-auto' src={bridge1} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl'>Rian</p>
                     <p className=' font-customFont text-2xl'>Rian Susanto Hwhw</p>
                     <p className=' font-semibold'>Putra Ketiga Dari</p>
@@ -20,7 +22,7 @@ const Bridge = () => {
                     <p className='font-customFont text-6xl font-bold'>&</p>
                 </div>
                 <div>
-                    <img className='h-64 border-4 border-purple-400  rounded-full w-64 mx-auto' src="./src/assets/7.jpg" alt="" />
+                    <img className='h-64 border-4 border-purple-400  rounded-full w-64 mx-auto' src={bridge2} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl'>Salsa</p>
                     <p className=' font-customFont text-2xl'>Salsa salsa sala</p>
                     <p className=' font-semibold'>Putra Ketiga Dari</p>
