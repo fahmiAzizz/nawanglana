@@ -10,7 +10,7 @@ import Countdown from 'react-countdown-simple';
 
 const Header = () => {
     return (
-        <div className='relative h-auto mx-auto max-w-screen-mobile '>
+        <div className='relative h-screen mx-auto max-w-screen-mobile '>
             <div className=' absolute mx-auto text-center z-10 bg-black w-full h-full bg-opacity-50'>
                 <div className='text-white pt-[50%]'>
                     <p className='text-2xl text-with-shadow'>We Are Getting Married</p>
@@ -79,16 +79,16 @@ const Header = () => {
                 labels={false}
             >
                 <div >
-                    <img className='h-[500px]' src={gambar1} />
+                    <img className='h-screen' src={gambar1} />
                 </div>
                 <div >
-                    <img className='h-[500px]' src={gambar2} />
+                    <img className='h-screen' src={gambar2} />
                 </div>
                 <div >
-                    <img className='h-[500px]' src={gambar3} />
+                    <img className='h-screen' src={gambar3} />
                 </div>
                 <div >
-                    <img className='h-[500px]' src={gambar4} />
+                    <img className='h-screen' src={gambar4} />
                 </div>
             </Carousel>
         </div>
