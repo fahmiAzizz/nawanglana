@@ -12,7 +12,7 @@ const Header = () => {
     return (
         <div className='relative h-screen mx-auto max-w-screen-mobile '>
             <div className=' absolute mx-auto text-center z-10 bg-black w-full h-full bg-opacity-50'>
-                <div className='text-white pt-[50%]'>
+                <div className='text-white pt-[70%]'>
                     <p className='text-2xl text-with-shadow'>We Are Getting Married</p>
                     <p className='text-5xl p-2 font-customFont text-with-shadow'>Riyan & Salsa</p>
                     <p className='text-xl text-with-shadow'>Minggu, 21 April 2024</p>
