@@ -6,12 +6,14 @@ import './index.css'
 import Bridge from './components/Bridge.jsx'
 import Akad from './components/Akad.jsx'
 import Gallery from './components/Gallery.jsx'
+import Gift from './components/Gift.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
     <Bridge />
     <Akad />
+    <Gift />
     <Gallery />
   </React.StrictMode>,
 )
