@@ -11,7 +11,7 @@ const Akad = () => {
             <div className='w-[90%] mx-auto border bg-slate-50 rounded-lg py-8'>
                 <p className='text-3xl font-customFont3'>Resepsi Pernikahan</p>
                 <p className='text-xl font-semibold'>April</p>
-                <div className='py-4 grid grid-cols-3 w-3/4 items-center mx-auto'>
+                <div className='py-4 grid grid-cols-3 w-[85%] items-center mx-auto'>
                     <p className='text-3xl font-semibold text-right'>Minggu</p>
                     <p className='text-4xl font-bold'><span className='text-5xl font-extralight'>|</span>21<span className='text-5xl font-extralight'>|</span></p>
                     <p className='text-3xl font-semibold text-left'>2024</p>
@@ -25,7 +25,7 @@ const Akad = () => {
             <div className='w-[90%] mx-auto border bg-slate-50 rounded-lg py-8 mt-10'>
                 <p className='text-3xl font-customFont3'>Resepsi Akad</p>
                 <p className='text-xl font-semibold'>April</p>
-                <div className='py-4 grid grid-cols-3 w-3/4 items-center mx-auto'>
+                <div className='py-4 grid grid-cols-3 w-[85%] items-center mx-auto'>
                     <p className='text-3xl font-semibold text-right'>Minggu</p>
                     <p className='text-4xl font-bold'><span className='text-5xl font-extralight'>|</span>21<span className='text-5xl font-extralight'>|</span></p>
                     <p className='text-3xl font-semibold text-left'>2024</p>
