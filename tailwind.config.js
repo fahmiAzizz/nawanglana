@@ -10,7 +10,9 @@ export default {
   },
   extend: {
     fontFamily: {
-      'customFont':['Satisfy', 'cursive']
+      'customFont': ['Satisfy', 'cursive'],
+      'customFont2': ['Sofia', 'cursive'],
+      'customFont3': ['Lobster', 'sans-serif'],
     }
   },
   },
