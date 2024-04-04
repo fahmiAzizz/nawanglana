@@ -30,7 +30,7 @@ const Bridge = () => {
                     <p className='text-3xl font-customFont pt-20'>OUR WEDDING</p>
                     <p className=' px-10 py-2 text-sm'>Atas Rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Anda di acara Kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada</p>
                 </motion.div>
-                <motion.div ref={bridge}
+                <motion.div
                     variants={{
                         hidden: { opacity: 0, x: -205 },
                         visible: { opacity: 1, x: 0 },
@@ -40,7 +40,7 @@ const Bridge = () => {
                     transition={{ duration: 2, delay: 0.25 }}
                     className="">
                     <img className='mt-24 h-64 rounded-full w-64 mx-auto' src={bridge2} alt="" />
-                    <p className=' mt-4 font-customFont font-bold text-3xl'>Salsa</p>
+                    <p className=' mt-4 font-customFont font-bold text-3xl' ref={bridge}>Salsa</p>
                     <p className=' font-customFont text-2xl'>Salsabila Dwiputri, S.kom</p>
                     <p className=' font-semibold'>Putri Kedua Dari</p>
                     <p className='font-semibold'>Bpk. Mulyana Rahmat dan ibu Tien Purnamasari</p>
