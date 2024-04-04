@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
-import gambar1 from "../assets/6.jpg";
+import gambar1 from "../assets/ls1.jpg";
 import gambar2 from "../assets/7.jpg";
 import gambar3 from "../assets/8.jpg";
 import gambar4 from "../assets/9.jpg";
+import gambar5 from "../assets/ls2.jpg";
 
-const images = [gambar1, gambar2, gambar3, gambar4];
+const images = [gambar1, gambar2, gambar3, gambar5, gambar4];
 
 const Gallery = () => {
     const [data, setData] = useState({ img: '', i: 0 });
@@ -29,21 +31,22 @@ const Gallery = () => {
 
     return (
         <div className='max-w-screen-mobile mx-auto px-2 py-2'>
+            <p className='py-10 font-customFont3 text-center font-semibold text-4xl'>GALLERY</p>
             {data.img && (
                 <div className='w-full h-screen bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-50 text-white'>
                     <button onClick={() => imgAction()} className='text-white text-3xl absolute top-3 right-3'>X</button>
-                    <button onClick={() => imgAction('previous-img')}>Prev</button>
+                    <MdOutlineArrowBackIos size={30} onClick={() => imgAction('prev-img')} />
                     <img
                         src={data.img}
                         className='max-w-[80%] max-h-[80%]'
                         alt=''
                         onClick={() => setData({ img: '', i: 0 })}
                     />
-                    <button onClick={() => imgAction('next-img')}>Next</button>
+                    <MdOutlineArrowForwardIos size={30} onClick={() => imgAction('next-img')} />
                 </div>
             )}
             <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2 }}>
-                <Masonry>
+                <Masonry gutter='10px'>
                     {images.map((image, i) => (
                         <img
                             key={i}
