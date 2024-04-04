@@ -5,8 +5,8 @@ import bridge2 from "../assets/female.png"
 
 
 const Bridge = () => {
-    const ref = useRef(null);
-    const isInView = useInView(ref, { once: true });
+    const bridge = useRef(null);
+    const isInView = useInView(bridge, { once: true });
     const mainControls = useAnimation();
     useEffect(() => {
         if (isInView) {
@@ -30,7 +30,7 @@ const Bridge = () => {
                     <p className='text-3xl font-customFont pt-20'>OUR WEDDING</p>
                     <p className=' px-10 py-2 text-sm'>Atas Rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Anda di acara Kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada</p>
                 </motion.div>
-                <motion.div ref={ref}
+                <motion.div ref={bridge}
                     variants={{
                         hidden: { opacity: 0, x: -205 },
                         visible: { opacity: 1, x: 0 },
