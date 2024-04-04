@@ -13,6 +13,9 @@ export default {
       'customFont': ['Satisfy', 'cursive'],
       'customFont2': ['Sofia', 'cursive'],
       'customFont3': ['Lobster', 'sans-serif'],
+    },
+    backgroundImage: {
+      'bingkai': "url('/src/assets/bingkai.png')"
     }
   },
   },
