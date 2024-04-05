@@ -41,7 +41,7 @@ const Bridge = () => {
                     className="">
                     <img className='mt-24 h-64 rounded-full w-64 mx-auto' src={bridge2} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl' ref={bridge}>Salsa</p>
-                    <p className=' font-customFont text-2xl'>Salsabila Dwiputri, S.kom</p>
+                    <p className=' font-customFont text-2xl'>Salsabila Dwiputri, Si.kom</p>
                     <p className=' font-semibold'>Putri Kedua Dari</p>
                     <p className='font-semibold'>Bpk. Mulyana Rahmat dan ibu Tien Purnamasari</p>
                 </motion.div>

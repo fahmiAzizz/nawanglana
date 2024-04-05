@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion';
 import { MdOutlineArrowBackIos, MdOutlineArrowForwardIos } from "react-icons/md";
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import gambar1 from "../assets/ls1.jpg";
@@ -10,6 +11,16 @@ import gambar5 from "../assets/ls2.jpg";
 const images = [gambar1, gambar2, gambar3, gambar5, gambar4];
 
 const Gallery = () => {
+
+    const gallery = useRef(null);
+    const isInView = useInView(gallery, { once: true });
+    const mainControls = useAnimation();
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible",)
+        }
+    }, [isInView])
+
     const [data, setData] = useState({ img: '', i: 0 });
 
     const viewImage = (img, i) => {
@@ -30,7 +41,15 @@ const Gallery = () => {
     }
 
     return (
-        <div className='max-w-screen-mobile mx-auto px-2 py-2'>
+        <motion.div
+            className='max-w-screen-mobile mx-auto px-2 py-2'
+            variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
+            }}
+            initial='hidden'
+            animate={mainControls}
+            transition={{ duration: 2, delay: 1 }}>
             <p className='py-10 font-customFont3 text-center font-semibold text-4xl'>GALLERY</p>
             {data.img && (
                 <div className='w-full h-screen bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-50 text-white'>
@@ -49,6 +68,7 @@ const Gallery = () => {
                 <Masonry gutter='10px'>
                     {images.map((image, i) => (
                         <img
+                            ref={gallery}
                             key={i}
                             src={image}
                             style={{ width: '100%', display: 'block' }}
@@ -58,7 +78,7 @@ const Gallery = () => {
                     ))}
                 </Masonry>
             </ResponsiveMasonry>
-        </div>
+        </motion.div>
     );
 };
 
