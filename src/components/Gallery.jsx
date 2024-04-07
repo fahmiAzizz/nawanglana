@@ -58,7 +58,7 @@ const Gallery = () => {
             initial='hidden'
             animate={mainControls}
             transition={{ duration: 2, delay: 1 }}>
-            <p className='py-10 font-customFont3 text-center font-semibold text-4xl'>GALLERY</p>
+            <p className='py-10 font-customFont3 text-center font-semibold text-4xl' ref={gallery}>GALLERY</p>
             {data.img && (
                 <div className='w-full h-screen bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-50 text-white'>
                     <button onClick={() => imgAction()} className='text-white text-3xl absolute top-3 right-3'>X</button>
@@ -76,7 +76,6 @@ const Gallery = () => {
                 <Masonry gutter='10px' style={{ maxHeight: '400px', overflowY: 'auto' }}>
                     {images.map((image, i) => (
                         <img
-                            ref={gallery}
                             key={i}
                             src={image}
                             style={{ width: '100%', display: 'block' }}

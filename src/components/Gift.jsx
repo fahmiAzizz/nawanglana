@@ -61,7 +61,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 '>
                         <img className='w-28 items-end' src={bri} alt="" />
-                        <button className='w-20 py-2 px-2 rounded-full ml-5 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('0954350785')}>Copy</button>
+                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('0954350785')}>Copy</button>
                     </div>
                 </motion.div>
                 <motion.div
@@ -82,7 +82,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 '>
                         <img className='w-28 items-end' src={bri} alt="" />
-                        <button className='w-20 py-2 px-2 rounded-full ml-5 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('1740868442')}>Copy</button>
+                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('1740868442')}>Copy</button>
                     </div>
                 </motion.div>
                 <motion.div
@@ -103,7 +103,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 pt-4'>
                         <img className='w-28 items-end' src={spay} alt="" />
-                        <button className='w-20 py-2 px-2 rounded-full ml-5 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('12208568712520')}>Copy</button>
+                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('12208568712520')}>Copy</button>
                     </div>
                 </motion.div>
                 <motion.div
@@ -124,7 +124,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 pt-4'>
                         <img className='w-28 items-end' src={spay} alt="" />
-                        <button className='w-20 py-2 px-2 rounded-full ml-5 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('122083819818382')}>Copy</button>
+                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('122083819818382')}>Copy</button>
                     </div>
                 </motion.div>
             </div>
