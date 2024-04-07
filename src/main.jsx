@@ -8,9 +8,11 @@ import Akad from './components/Akad.jsx'
 import Gallery from './components/Gallery.jsx'
 import Gift from './components/Gift.jsx'
 import Wish from './components/Wish.jsx'
+import Music from './components/Music.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Music />
     <Header />
     <Bridge />
     <Akad />

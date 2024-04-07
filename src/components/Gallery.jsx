@@ -65,7 +65,7 @@ const Gallery = () => {
                 </div>
             )}
             <ResponsiveMasonry columnsCountBreakPoints={{ 750: 2 }}>
-                <Masonry gutter='10px' style={{ maxHeight: 'calc(100vh - 150px)', overflowY: 'auto' }}>
+                <Masonry gutter='10px' style={{ maxHeight: '400px', overflowY: 'auto' }}>
                     {images.map((image, i) => (
                         <img
                             ref={gallery}
