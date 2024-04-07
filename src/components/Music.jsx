@@ -17,7 +17,7 @@ const Music = () => {
     };
 
     return (
-        <div className=' max-w-screen-mobile'> <div className='fixed bottom-10 right-10 z-50 bg-blue-700 text-white p-4 rounded-full' >
+        <div className=' max-w-screen-mobile'> <div className='fixed bottom-10 right-10 z-50 hover:bg-blue-500 hover:scale-110 duration-100 bg-blue-500 text-white p-4 rounded-full' >
             <div>
                 <audio className='hidden' ref={audioRef} autoPlay={true} loop={false} controls>
                     <source src={song} type="audio/mpeg" />

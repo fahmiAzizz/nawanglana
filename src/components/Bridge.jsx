@@ -32,18 +32,20 @@ const Bridge = () => {
                 </motion.div>
                 <motion.div
                     variants={{
-                        hidden: { opacity: 0, x: -205 },
-                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1 },
                     }}
                     initial='hidden'
                     animate={mainControls}
-                    transition={{ duration: 2, delay: 0.25 }}
+                    transition={{ duration: 2, delay: 1 }}
                     className="">
                     <img className='mt-24 h-64 rounded-full w-64 mx-auto' src={bridge2} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl' ref={bridge}>Salsa</p>
                     <p className=' font-customFont text-2xl'>Salsabila Dwiputri, Si.kom</p>
                     <p className=' font-semibold'>Putri Kedua Dari</p>
-                    <p className='font-semibold'>Bpk. Mulyana Rahmat dan ibu Tien Purnamasari</p>
+                    <p className='font-semibold'>Bpk. Mulyana Rahmat</p>
+                    <p className='font-semibold'>dan</p>
+                    <p className='font-semibold'>ibu Tien Purnamasari</p>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -58,8 +60,8 @@ const Bridge = () => {
                 </motion.div>
                 <motion.div
                     variants={{
-                        hidden: { opacity: 0, x: 205 },
-                        visible: { opacity: 1, x: 0 },
+                        hidden: { opacity: 0 },
+                        visible: { opacity: 1 },
                     }}
                     initial='hidden'
                     animate={mainControls}
@@ -68,7 +70,9 @@ const Bridge = () => {
                     <p className=' mt-4 font-customFont font-bold text-3xl'>Rian</p>
                     <p className=' font-customFont text-2xl'>Mochamad Hesrian Zulyana, S.Psi</p>
                     <p className=' font-semibold'>Putra Kedua Dari</p>
-                    <p className='font-semibold'>Bpk. Herman Suryadi dan ibu Erna Rohani</p>
+                    <p className='font-semibold'>Bpk. Herman Suryadi</p>
+                    <p className='font-semibold'>dan</p>
+                    <p className='font-semibold'>ibu Erna Rohani</p>
                 </motion.div>
             </div>
             <svg className=' rotate-180' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

@@ -19,7 +19,7 @@ const Akad = () => {
                 }}
                 initial='hidden'
                 animate={mainControls}
-                transition={{ duration: 2, delay: 0.50 }}
+                transition={{ duration: 2, delay: 2 }}
                 className='text-4xl font-customFont3 pt-24'>
                 <p>SAVE THE DATE</p>
                 <img className='w-1/2 mx-auto -mt-20' src={Underline} alt="" />
@@ -27,8 +27,8 @@ const Akad = () => {
 
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, x: 250 },
-                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0, y: -250 },
+                    visible: { opacity: 1, y: 0 },
                 }}
                 initial='hidden'
                 animate={mainControls}
@@ -49,8 +49,8 @@ const Akad = () => {
             </motion.div>
             <motion.div
                 variants={{
-                    hidden: { opacity: 0, x: -250 },
-                    visible: { opacity: 1, x: 0 },
+                    hidden: { opacity: 0, y: 250 },
+                    visible: { opacity: 1, y: 0 },
                 }}
                 initial='hidden'
                 animate={mainControls}

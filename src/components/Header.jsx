@@ -8,25 +8,9 @@ import gambar2 from "../assets/13.jpg"
 import gambar3 from "../assets/14.jpg"
 import gambar4 from "../assets/15.jpg"
 import Countdown from 'react-countdown-simple';
-import song from '../assets/song.mp3';
-import { FaMusic } from 'react-icons/fa';
+
 
 const Header = () => {
-
-
-
-    const [isPlaying, setIsPlaying] = useState(false);
-    const audioRef = useRef(null);
-
-    const toggleAudio = () => {
-        if (isPlaying) {
-            audioRef.current.pause();
-        } else {
-            audioRef.current.play();
-        }
-        setIsPlaying(!isPlaying);
-    };
-
 
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -40,17 +24,7 @@ const Header = () => {
     return (
         <div ref={ref}
             className='relative h-screen mx-auto max-w-screen-mobile '>
-            <div className='fixed bottom-10 right-10 z-50 bg-blue-700 text-white p-4 rounded-full' >
-                <div>
-                    <audio className='hidden' ref={audioRef} autoPlay={true} loop={false} controls>
-                        <source src={song} type="audio/mpeg" />
-                        Browsermu tidak mendukung tag audio, upgrade donk!
-                    </audio>
-                </div>
-                <div onClick={toggleAudio}>
-                    <FaMusic style={{ fontSize: '35px', cursor: 'pointer' }} />
-                </div>
-            </div>
+
             <div
                 className=' absolute mx-auto text-center z-10 bg-black w-full h-full bg-opacity-50'>
                 <motion.div
