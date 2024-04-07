@@ -37,7 +37,7 @@ const Header = () => {
                     transition={{ duration: 2, delay: 0.35 }}>
                     <div className='text-white pt-[70%]'>
                         <p className='text-2xl text-with-shadow'>We Are Getting Married</p>
-                        <p className='text-5xl p-2 font-customFont text-with-shadow'>Rian & Salsa</p>
+                        <p className='text-5xl p-2 font-customFont text-with-shadow'>Salsa & Salsa</p>
                         <p className='text-xl text-with-shadow'>Minggu, 21 April 2024</p>
                     </div>
                     <div>

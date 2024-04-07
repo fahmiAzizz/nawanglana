@@ -1,24 +1,30 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react';
+import Swal from 'sweetalert2';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import chip from '../assets/chip.png'
-import spay from '../assets/spay.png'
-import bri from '../assets/bri.png'
+import chip from '../assets/chip.png';
+import spay from '../assets/spay.png';
+import bri from '../assets/bri.png';
 
 const Gift = () => {
-
     const gift = useRef(null);
     const isInView = useInView(gift, { once: true });
     const mainControls = useAnimation();
+
     useEffect(() => {
         if (isInView) {
-            mainControls.start("visible",)
+            mainControls.start("visible");
         }
-    }, [isInView])
+    }, [isInView]);
 
     const copyToClipboard = (text) => {
         navigator.clipboard.writeText(text)
             .then(() => {
-                alert("Nomor telah disalin!");
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Nomor telah disalin!',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             })
             .catch((error) => {
                 console.error("Gagal menyalin nomor:", error);

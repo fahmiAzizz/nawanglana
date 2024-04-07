@@ -9,6 +9,7 @@ import Gallery from './components/Gallery.jsx'
 import Gift from './components/Gift.jsx'
 import Wish from './components/Wish.jsx'
 import Music from './components/Music.jsx'
+import Thanks from './components/Thanks.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -19,5 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Gift />
     <Gallery />
     <Wish />
+    <Thanks />
   </React.StrictMode>,
 )
