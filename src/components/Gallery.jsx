@@ -7,8 +7,16 @@ import gambar2 from "../assets/7.jpg";
 import gambar3 from "../assets/8.jpg";
 import gambar4 from "../assets/9.jpg";
 import gambar5 from "../assets/ls2.jpg";
+import gambar6 from "../assets/1.jpg";
+import gambar7 from "../assets/2.jpg";
+import gambar8 from "../assets/3.jpg";
+import gambar9 from "../assets/4.jpg";
+import gambar10 from "../assets/5.jpg";
+import gambar11 from "../assets/6.jpg";
+import gambar12 from "../assets/10.jpg";
+import gambar13 from "../assets/11.jpg";
 
-const images = [gambar1, gambar2, gambar3, gambar5, gambar4];
+const images = [gambar1, gambar2, gambar3, gambar5, gambar4, gambar6, gambar7, gambar8, gambar9, gambar10, gambar11, gambar12, gambar13,];
 
 const Gallery = () => {
 
