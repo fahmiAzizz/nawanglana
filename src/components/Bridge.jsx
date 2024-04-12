@@ -28,7 +28,7 @@ const Bridge = () => {
                     animate={mainControls}
                     transition={{ duration: 2, delay: 0.25 }}>
                     <p className='text-3xl font-customFont pt-20'>OUR WEDDING</p>
-                    <p className=' px-10 py-2 text-sm'>Atas Rahmat Tuhan Yang Maha Esa, kami bermaksud mengundang Anda di acara Kami. Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu pada</p>
+                    <p className=' px-10 py-2 text-sm'>Dengan rahmat dari Tuhan Yang Maha Esa, kami mengundang Anda untuk bergabung dalam acara kami. Kehadiran serta doa restu dari Bapak/Ibu/Saudara/i akan sangat kami hargai, dan menjadi berkat bagi keluarga kami.</p>
                 </motion.div>
                 <motion.div
                     variants={{
