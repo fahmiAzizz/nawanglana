@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import song from '../assets/song.mp3';
-import { FaMusic } from 'react-icons/fa';
+import { TbMusic, TbMusicOff } from "react-icons/tb";
 
 const Music = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -31,7 +31,7 @@ const Music = () => {
                     </audio>
                 </div>
                 <div onClick={toggleAudio}>
-                    <FaMusic style={{ fontSize: '35px', cursor: 'pointer' }} />
+                    <TbMusic style={{ fontSize: '35px', cursor: 'pointer' }} />
                 </div>
             </div>
         </div>

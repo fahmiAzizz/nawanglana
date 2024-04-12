@@ -7,12 +7,3 @@ export const getPosts = async () => {
     return response.data.results;
 }
 
-axios.get('https://be-wedding-hye2.vercel.app/v1/wish')
-  .then(response => {
-    // Lakukan sesuatu dengan data yang diterima
-    console.log(response.data);
-  })
-  .catch(error => {
-    // Tangani error jika ada
-    console.error('Error:', error);
-  });
