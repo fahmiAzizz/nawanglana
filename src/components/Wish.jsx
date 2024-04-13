@@ -1,7 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion';
 import axios from 'axios';
 
 const Wish = () => {
+
+
+    const wish = useRef(null);
+    const isInView = useInView(wish, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView]);
+
     const [wishData, setWishData] = useState(null);
     const [name, setName] = useState('');
     const [presence, setPresence] = useState(1); // Defaultnya adalah Hadir
@@ -56,12 +69,28 @@ const Wish = () => {
             <div >
                 <div className='bg-[#0099ff]'>
 
-                    <div className='text-3xl font-semibold text-center font-customFont'>
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                        }}
+                        initial='hidden'
+                        animate={mainControls}
+                        transition={{ duration: 2, delay: 0.50 }}
+                        className='text-3xl font-semibold text-center font-customFont'>
                         UCAPAN & DOA
-                    </div>
-                    <div className='border rounded-md mx-8 mt-4'>
+                    </motion.div>
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0 },
+                            visible: { opacity: 1 },
+                        }}
+                        initial='hidden'
+                        animate={mainControls}
+                        transition={{ duration: 2, delay: 0.50 }}
+                        className='border rounded-md mx-8 mt-4'>
                         {/* Form untuk membuat posting baru */}
-                        <form onSubmit={handleSubmit} className="mt-4 mx-4">
+                        <form ref={wish} onSubmit={handleSubmit} className="mt-4 mx-4">
                             <div className="mb-4">
                                 <label htmlFor="name" className="block  font-bold mb-2">Nama:</label>
                                 <input
@@ -119,7 +148,7 @@ const Wish = () => {
                             <div className="mt-8 text-center">Loading...</div>
                         )}
 
-                    </div>
+                    </motion.div>
                 </div>
 
                 <svg className=' rotate-180' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

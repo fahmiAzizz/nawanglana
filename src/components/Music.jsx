@@ -7,10 +7,16 @@ const Music = () => {
     const audioRef = useRef(null);
 
     useEffect(() => {
-        // Mulai pemutaran musik saat komponen dimuat
+        // Membersihkan event listener saat komponen dilepas
+        return () => {
+            window.removeEventListener('load', playMusicOnLoad);
+        };
+    }, []);
+
+    const playMusicOnLoad = () => {
         audioRef.current.play();
         setIsPlaying(true);
-    }, []);
+    };
 
     const toggleAudio = () => {
         if (isPlaying) {
@@ -31,7 +37,11 @@ const Music = () => {
                     </audio>
                 </div>
                 <div onClick={toggleAudio}>
-                    <TbMusic style={{ fontSize: '35px', cursor: 'pointer' }} />
+                    {isPlaying ? (
+                        <TbMusic style={{ fontSize: '35px', cursor: 'pointer' }} />
+                    ) : (
+                        <TbMusicOff style={{ fontSize: '35px', cursor: 'pointer' }} />
+                    )}
                 </div>
             </div>
         </div>

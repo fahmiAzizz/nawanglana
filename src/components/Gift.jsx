@@ -46,8 +46,8 @@ const Gift = () => {
                     animate={mainControls}
                     transition={{ duration: 2, delay: 0.50 }}
                 >
-                    <p className='text-center text-4xl font-semibold font-customFont3'>Titip Hadiah</p>
-                    <p className='text-center my-2 px-10'>Doa restu Bapak/Ibu sekalian merupakan karunia yang sangat berarti bagi kami. Dan jika memberi merupakan ungkapan tanda kasih, Bapak/Ibu dapat memberi kado secara cashless. Terima kasih</p>
+                    <p className='text-center text-4xl font-semibold font-customFont'>Titip Hadiah</p>
+                    <p className='text-center my-2 px-10 '>Doa restu yang disertai dengan kasih sayang dari Bapak/Ibu sangatlah bermakna bagi kami. Dan jika memberi adalah bentuk dari cinta, Bapak/Ibu bisa memberikan hadiah secara non-tunai. Terima kasih atas kehadiran dan doa restu yang selalu menyertai langkah-langkah kami.</p>
                 </motion.div>
                 <motion.div
                     variants={{
