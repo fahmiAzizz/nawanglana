@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion';
 import axios from 'axios';
+import DOMPurify from 'dompurify'; // Import DOMPurify
 
 const Wish = () => {
 
@@ -39,11 +40,12 @@ const Wish = () => {
         setIsLoading(true);
 
         try {
+            const sanitizedMessage = DOMPurify.sanitize(message);
             // Mengirim data ke API
             await axios.post('https://backend-gamma-virid.vercel.app/api/v1/wish', {
                 name,
                 presence,
-                message,
+                message: sanitizedMessage, // Gunakan pesan yang sudah dibersihkan
                 created_at: new Date().toISOString().slice(0, 19).replace('T', ' ')
             });
 
