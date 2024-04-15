@@ -29,7 +29,7 @@ const Header = () => {
                 className=' absolute mx-auto text-center z-10 bg-black w-full h-full bg-opacity-50'>
                 <motion.div
                     variants={{
-                        hidden: { opacity: 0, y: 250 },
+                        hidden: { opacity: 0, y: -250 },
                         visible: { opacity: 1, y: 0 },
                     }}
                     initial='hidden'

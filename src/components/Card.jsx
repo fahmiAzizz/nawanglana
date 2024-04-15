@@ -49,9 +49,8 @@ const Card = () => {
             <div className={`mx-auto justify-items-center max-w-screen-mobile text-center z-50 fixed top-0 left-0 right-0 bottom-0 h-screen ${isVisible ? '' : 'hidden'}`}>
                 <div className="absolute w-full h-full flex justify-center items-center z-50">
                     <motion.div
-                        initial={{ opacity: 0, y: -50 }}
+                        initial={{ opacity: 0, y: 100 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -50 }}
                         transition={{ duration: 0.5 }}
                         className="bg-white bg-opacity-50 text-slate-800 p-6 rounded-lg"
                         onClick={handleCardClick}
