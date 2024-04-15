@@ -107,12 +107,12 @@ const Card = () => {
                     </div>
                 </Carousel>
             </div>
-            <div className={`fixed bottom-10 right-10 z-50 hover:bg-blue-500 hover:scale-110 duration-100 bg-blue-500 text-white p-4 rounded-full ${isVisible ? 'hidden' : ''} `}>
+            <div className={`fixed bottom-6 right-6 z-50 hover:bg-blue-500 hover:scale-110 duration-100 bg-blue-500 text-white p-4 rounded-full ${isVisible ? 'hidden' : ''} `}>
                 <div onClick={toggleAudio}>
                     {isPlaying ? (
-                        <TbMusic style={{ fontSize: '35px', cursor: 'pointer' }} />
+                        <TbMusic size={28} style={{ cursor: 'pointer' }} />
                     ) : (
-                        <TbMusicOff style={{ fontSize: '35px', cursor: 'pointer' }} />
+                        <TbMusicOff size={28} style={{ cursor: 'pointer' }} />
                     )}
                 </div>
                 <audio className='hidden' ref={audioRef} autoPlay={false} loop={false}>

@@ -57,7 +57,7 @@ const Gift = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 2, delay: 0.50 }}
-                    className='mt-10 border rounded-md w-[75%] mx-auto h-48 bg-slate-400 shadow-2xl grid grid-cols-2'>
+                    className='mt-10 border rounded-md w-[80%] mx-auto h-48 bg-slate-100 text-slate-800 shadow-2xl grid grid-cols-2'>
                     <div className=' w-full' ref={gift}>
                         <img className='w-28' src={chip} alt="" />
                         <div className='ml-4'>
@@ -67,7 +67,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 '>
                         <img className='w-28 items-end' src={bri} alt="" />
-                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('0954350785')}>Copy</button>
+                        <button className='w-20 py-1 px-1 text-slate-100 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('0954350785')}>Copy</button>
                     </div>
                 </motion.div>
                 <motion.div
@@ -78,7 +78,7 @@ const Gift = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 2, delay: 0.50 }}
-                    className='mt-10 border rounded-md w-[75%] mx-auto h-48 bg-slate-400 shadow-2xl grid grid-cols-2'>
+                    className='mt-10 border rounded-md w-[80%] mx-auto h-48 bg-slate-100 text-slate-800 shadow-2xl grid grid-cols-2'>
                     <div className=' w-full'>
                         <img className='w-28' src={chip} alt="" />
                         <div className='ml-4'>
@@ -88,7 +88,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 '>
                         <img className='w-28 items-end' src={bri} alt="" />
-                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('1740868442')}>Copy</button>
+                        <button className='w-20 py-1 px-1 text-slate-100 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('1740868442')}>Copy</button>
                     </div>
                 </motion.div>
                 <motion.div
@@ -99,7 +99,7 @@ const Gift = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 2, delay: 0.50 }}
-                    className='mt-10 border rounded-md w-[75%] mx-auto h-48 bg-slate-400 shadow-2xl grid grid-cols-2'>
+                    className='mt-10 border rounded-md w-[80%] mx-auto h-48 bg-slate-100 text-slate-800 shadow-2xl grid grid-cols-2'>
                     <div className=' w-full'>
                         <img className='w-28' src={chip} alt="" />
                         <div className='ml-4'>
@@ -109,7 +109,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 pt-4'>
                         <img className='w-28 items-end' src={spay} alt="" />
-                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('12208568712520')}>Copy</button>
+                        <button className='w-20 py-1 px-1 text-slate-100 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('12208568712520')}>Copy</button>
                     </div>
                 </motion.div>
                 <motion.div
@@ -120,7 +120,7 @@ const Gift = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 2, delay: 0.50 }}
-                    className='mt-10 border rounded-md w-[75%] mx-auto h-48 bg-slate-400 shadow-2xl grid grid-cols-2'>
+                    className='mt-10 border rounded-md w-[80%] mx-auto h-48 bg-slate-100 text-slate-800 shadow-2xl grid grid-cols-2'>
                     <div className=' w-full'>
                         <img className='w-28' src={chip} alt="" />
                         <div className='ml-4'>
@@ -130,7 +130,7 @@ const Gift = () => {
                     </div>
                     <div className='w-full pl-10 pt-4'>
                         <img className='w-28 items-end' src={spay} alt="" />
-                        <button className='w-20 py-1 px-1 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('122083819818382')}>Copy</button>
+                        <button className='w-20 py-1 px-1 text-slate-100 rounded-full ml-3 text-center mt-10 bg-blue-500 hover:scale-110 hover:to-blue-600 duration-100 ' onClick={() => copyToClipboard('122083819818382')}>Copy</button>
                     </div>
                 </motion.div>
             </div>
