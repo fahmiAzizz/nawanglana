@@ -97,13 +97,13 @@ const Card = () => {
                     labels={false}
                 >
                     <div>
-                        <img className='h-screen' src={gambar2} alt="gambar2" />
+                        <img className='h-screen bg-cover' src={gambar2} alt="gambar2" />
                     </div>
                     <div>
-                        <img className='h-screen' src={gambar3} alt="gambar3" />
+                        <img className='h-screen bg-cover' src={gambar3} alt="gambar3" />
                     </div>
                     <div>
-                        <img className='h-screen' src={gambar4} alt="gambar4" />
+                        <img className='h-screen bg-cover' src={gambar4} alt="gambar4" />
                     </div>
                 </Carousel>
             </div>

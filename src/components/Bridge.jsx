@@ -39,7 +39,7 @@ const Bridge = () => {
                     animate={mainControls}
                     transition={{ duration: 2, delay: 1 }}
                     className="">
-                    <img className='mt-24 h-64 rounded-full w-64 mx-auto' src={bridge2} alt="" />
+                    <img className=' object-cover object-center mt-24 h-64 rounded-full w-64 mx-auto' src={bridge2} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl' ref={bridge}>Salsa</p>
                     <p className=' font-customFont text-2xl'>Salsabila Dwiputri, Si.kom</p>
                     <p className=' font-semibold'>Putri Kedua Dari</p>
@@ -66,7 +66,7 @@ const Bridge = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 2, delay: 1 }}>
-                    <img className='h-64 rounded-full w-64 mx-auto' src={bridge1} alt="" />
+                    <img className='object-cover object-center h-64 rounded-full w-64 mx-auto' src={bridge1} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl'>Rian</p>
                     <p className=' font-customFont text-2xl'>Mochamad Hesrian Zulyana, S.Psi</p>
                     <p className=' font-semibold'>Putra Kedua Dari</p>

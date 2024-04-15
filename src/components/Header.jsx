@@ -102,6 +102,7 @@ const Header = () => {
                 stopOnHover={true}
                 showStatus={false}
                 labels={false}
+                className=' object-cover object-center'
             >
                 <div >
                     <img className='h-screen' src={gambar1} />
