@@ -10,10 +10,12 @@ import Gift from './components/Gift.jsx'
 import Wish from './components/Wish.jsx'
 import Music from './components/Music.jsx'
 import Thanks from './components/Thanks.jsx'
+import Card from './components/Card.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Music />
+    <Card />
+    {/* <Music /> */}
     <Header />
     <Bridge />
     <Akad />
