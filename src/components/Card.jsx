@@ -13,6 +13,7 @@ import gambar4 from "../assets/15.jpg";
 const Card = () => {
     const [isVisible, setIsVisible] = useState(true);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [countdownComplete, setCountdownComplete] = useState(false); // State untuk menentukan apakah hitungan mundur telah selesai
     const audioRef = useRef(null);
 
     useEffect(() => {
@@ -81,7 +82,9 @@ const Card = () => {
                                     </div>
                                 </div>
                             )}
+                            onComplete={() => setCountdownComplete(true)} // Set countdownComplete menjadi true saat hitungan mundur selesai
                         />
+                        {countdownComplete && <p className="text-2xl p-2 text-center font-customFont">Acara Sedang Berlangsung</p>} {/* Tampilkan teks saat countdown selesai */}
                         <p className='font-semibold flex justify-center items-center text-center p-2 bg-white bg-opacity-70 my-2 rounded-xl cursor-pointer' onClick={handleCardClick}><MdOutlineEmail size={30} /> Buka Undangan</p>
                     </motion.div>
                 </div>
