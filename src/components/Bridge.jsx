@@ -26,7 +26,7 @@ const Bridge = () => {
                     }}
                     initial='hidden'
                     animate={mainControls}
-                    transition={{ duration: 2, delay: 0.25 }}>
+                    transition={{ duration: 1, delay: 0.25 }}>
                     <p className='text-3xl font-customFont pt-20'>OUR WEDDING</p>
                     <p className=' px-10 py-2 text-sm'>Dengan rahmat dari Tuhan Yang Maha Esa, kami mengundang Anda untuk bergabung dalam acara kami. Kehadiran serta doa restu dari Bapak/Ibu/Saudara/i akan sangat kami hargai, dan menjadi berkat bagi keluarga kami.</p>
                 </motion.div>
@@ -54,7 +54,7 @@ const Bridge = () => {
                     }}
                     initial='hidden'
                     animate={mainControls}
-                    transition={{ duration: 2, delay: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
                     className='my-10'>
                     <p className='font-customFont text-6xl font-bold'>&</p>
                 </motion.div>
@@ -65,7 +65,7 @@ const Bridge = () => {
                     }}
                     initial='hidden'
                     animate={mainControls}
-                    transition={{ duration: 2, delay: 1 }}>
+                    transition={{ duration: 1, delay: 0.5 }}>
                     <img className='object-cover object-center h-64 rounded-full w-64 mx-auto' src={bridge1} alt="" />
                     <p className=' mt-4 font-customFont font-bold text-3xl'>Rian</p>
                     <p className=' font-customFont text-2xl'>Mochamad Hesrian Zulyana, S.Psi</p>

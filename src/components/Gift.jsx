@@ -119,7 +119,7 @@ const Gift = () => {
                     }}
                     initial='hidden'
                     animate={mainControls}
-                    transition={{ duration: 2, delay: 0.50 }}
+                    transition={{ duration: 1, delay: 0.50 }}
                     className='mt-10 border rounded-md w-[80%] mx-auto h-48 bg-slate-100 text-slate-800 shadow-2xl grid grid-cols-2'>
                     <div className=' w-full'>
                         <img className='w-28' src={chip} alt="" />
@@ -142,3 +142,5 @@ const Gift = () => {
 }
 
 export default Gift
+
+

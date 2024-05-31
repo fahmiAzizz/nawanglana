@@ -85,18 +85,11 @@ const Header = () => {
                 labels={false}
                 className=' object-cover object-center'
             >
-                <div>
-                    <img className='h-screen' src={gambar1} alt="gambar1" />
-                </div>
-                <div>
-                    <img className='h-screen' src={gambar2} alt="gambar2" />
-                </div>
-                <div>
-                    <img className='h-screen' src={gambar3} alt="gambar3" />
-                </div>
-                <div>
-                    <img className='h-screen' src={gambar4} alt="gambar4" />
-                </div>
+                {[gambar1, gambar2, gambar3, gambar4].map((image, index) => (
+                    <div>
+                        <img className='h-screen  object-cover' src={image} alt="gambar" key={index} />
+                    </div>
+                ))}
             </Carousel>
         </div>
     );

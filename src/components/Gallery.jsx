@@ -57,7 +57,7 @@ const Gallery = () => {
             }}
             initial='hidden'
             animate={mainControls}
-            transition={{ duration: 2, delay: 1 }}>
+            transition={{ duration: 1, delay: 0.5 }}>
             <p className='py-10 font-customFont text-center font-semibold text-4xl' ref={gallery}>GALLERY</p>
             {data.img && (
                 <div className='w-full h-screen bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-50 text-white'>

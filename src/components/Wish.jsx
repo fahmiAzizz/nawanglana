@@ -78,7 +78,7 @@ const Wish = () => {
                         }}
                         initial='hidden'
                         animate={mainControls}
-                        transition={{ duration: 2, delay: 0.50 }}
+                        transition={{ duration: 1, delay: 0.50 }}
                         className='text-3xl font-semibold text-center font-customFont'>
                         UCAPAN & DOA
                     </motion.div>
@@ -89,7 +89,7 @@ const Wish = () => {
                         }}
                         initial='hidden'
                         animate={mainControls}
-                        transition={{ duration: 2, delay: 0.50 }}
+                        transition={{ duration: 1, delay: 0.50 }}
                         className='border rounded-md mx-8 mt-4'>
                         {/* Form untuk membuat posting baru */}
                         <form ref={wish} onSubmit={handleSubmit} className="mt-4 mx-4">

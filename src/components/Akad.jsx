@@ -19,7 +19,7 @@ const Akad = () => {
                 }}
                 initial='hidden'
                 animate={mainControls}
-                transition={{ duration: 2, delay: 2 }}
+                transition={{ duration: 1, delay: 0.5 }}
                 className='text-4xl font-customFont3 pt-24'>
                 <p>SAVE THE DATE</p>
                 <img className='w-1/2 mx-auto -mt-20' src={Underline} alt="" />
@@ -32,7 +32,7 @@ const Akad = () => {
                 }}
                 initial='hidden'
                 animate={mainControls}
-                transition={{ duration: 2, delay: 0.50 }}
+                transition={{ duration: 1, delay: 0.50 }}
                 className='w-[90%] mx-auto border bg-slate-100 shadow-lg rounded-lg py-8'>
                 <p className='text-3xl font-customFont3' ref={akad}>Akad</p>
                 <p className='text-xl font-semibold'>April</p>
@@ -54,7 +54,7 @@ const Akad = () => {
                 }}
                 initial='hidden'
                 animate={mainControls}
-                transition={{ duration: 2, delay: 0.50 }}
+                transition={{ duration: 1, delay: 0.50 }}
                 className='w-[90%] mx-auto border bg-slate-100 shadow-lg rounded-lg py-8 mt-10'>
                 <p className='text-3xl font-customFont3'>Resepsi Pernikahan</p>
                 <p className='text-xl font-semibold'>April</p>
