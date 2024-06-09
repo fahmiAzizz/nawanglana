@@ -47,20 +47,20 @@ const Card = () => {
 
     return (
         <div>
-            <div className={`mx-auto justify-items-center max-w-screen-mobile text-center z-50 fixed top-0 left-0 right-0 bottom-0 h-screen ${isVisible ? '' : 'hidden'}`}>
-                <div className="absolute w-full h-full flex justify-center items-center z-50">
+            <div className={`bg-[#8FBC8F] mx-auto justify-items-center max-w-screen-mobile text-center z-50 fixed top-0 left-0 right-0 bottom-0 h-screen ${isVisible ? '' : 'hidden'}`}>
+                <div className=" absolute w-full h-full flex justify-center items-center z-50">
                     <motion.div
                         initial={{ opacity: 0, y: 100 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
-                        className="bg-white bg-opacity-50 text-slate-800 p-6 rounded-lg"
+                        className=" bg-[#fff] bg-opacity-50 text-slate-800 p-6 rounded-lg"
                         onClick={handleCardClick}
                     >
                         <p className="text-2xl font-customFont">We Are Getting Married</p>
-                        <p className="text-5xl font-bold font-customFont"> Salsa & Rian</p>
-                        <p className="text-xl font-customFont">Minggu, 21 April 2024</p>
+                        <p className="text-5xl font-bold font-customFont p-2">Alya & Dodi</p>
+                        <p className="text-xl font-customFont">Minggu, 30 Juni 2024</p>
                         <Countdown
-                            targetDate={new Date('2024-04-21T00:00:00')}
+                            targetDate={new Date('2024-06-30T00:00:00')}
                             interval={1000}
                             renderer={({ days, hours, minutes, seconds, completed }) => (
                                 <div className="grid grid-cols-4 gap-4 mt-4">
@@ -88,27 +88,6 @@ const Card = () => {
                         <p className='font-semibold flex justify-center items-center text-center p-2 bg-white bg-opacity-70 my-2 rounded-xl cursor-pointer' onClick={handleCardClick}><MdOutlineEmail size={30} /> Buka Undangan</p>
                     </motion.div>
                 </div>
-                <Carousel
-                    showArrows={false}
-                    showThumbs={false}
-                    infiniteLoop={true}
-                    autoPlay={true}
-                    swipeable={true}
-                    showIndicators={false}
-                    stopOnHover={true}
-                    showStatus={false}
-                    labels={false}
-                >
-                    <div>
-                        <img className='h-screen  object-cover bg-cover' src={gambar2} alt="gambar2" />
-                    </div>
-                    <div>
-                        <img className='h-screen  object-cover bg-cover' src={gambar3} alt="gambar3" />
-                    </div>
-                    <div>
-                        <img className='h-screen  object-cover bg-cover' src={gambar4} alt="gambar4" />
-                    </div>
-                </Carousel>
             </div>
             <div className={`fixed bottom-6 right-6 z-50 hover:bg-blue-500 hover:scale-110 duration-100 bg-blue-500 text-white p-4 rounded-full ${isVisible ? 'hidden' : ''} `}>
                 <div onClick={toggleAudio}>

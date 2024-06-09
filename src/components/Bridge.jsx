@@ -14,11 +14,8 @@ const Bridge = () => {
         }
     }, [isInView])
     return (
-        <div className='text-white max-w-screen-mobile mx-auto -mt-32 relative z-20'>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#0099ff" fill-opacity="1" d="M0,64L30,64C60,64,120,64,180,53.3C240,43,300,21,360,42.7C420,64,480,128,540,160C600,192,660,192,720,160C780,128,840,64,900,48C960,32,1020,64,1080,96C1140,128,1200,160,1260,170.7C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-            </svg>
-            <div className='text-center bg-[#0099ff] pb-32'>
+        <div className=' text-slate-800 max-w-screen-mobile mx-auto  z-20'>
+            <div className='text-center bg-[#8FBC8F] py-20 px-5'>
                 <motion.div
                     variants={{
                         hidden: { opacity: 0 },
@@ -27,8 +24,10 @@ const Bridge = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 1, delay: 0.25 }}>
-                    <p className='text-3xl font-customFont pt-20'>OUR WEDDING</p>
-                    <p className=' px-10 py-2 text-sm'>Dengan rahmat dari Tuhan Yang Maha Esa, kami mengundang Anda untuk bergabung dalam acara kami. Kehadiran serta doa restu dari Bapak/Ibu/Saudara/i akan sangat kami hargai, dan menjadi berkat bagi keluarga kami.</p>
+                    <p className='text-3xl font-customFont py-5'>OUR WEDDING</p>
+                    <p className='font-bold'>Bissmillaahirrahmanirrahim</p>
+                    {/* <p>Assalamu'alaikum Warrahmatullahi Wabarakatuh</p> */}
+                    <p> Dengan memohon Rahmat dan Ridho Allah SWT yang telah menciptakan makhluknya berpasang-pasangan, Ya Allah Perkenankanlah Kami:</p>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -39,13 +38,9 @@ const Bridge = () => {
                     animate={mainControls}
                     transition={{ duration: 2, delay: 1 }}
                     className="">
-                    <img className=' object-cover object-center mt-24 h-64 rounded-full w-64 mx-auto' src={bridge2} alt="" />
-                    <p className=' mt-4 font-customFont font-bold text-3xl' ref={bridge}>Salsa</p>
-                    <p className=' font-customFont text-2xl'>Salsabila Dwiputri, Si.kom</p>
-                    <p className=' font-semibold'>Putri Kedua Dari</p>
-                    <p className='font-semibold'>Bpk. Mulyana Rahmat</p>
-                    <p className='font-semibold'>dan</p>
-                    <p className='font-semibold'>ibu Tien Purnamasari</p>
+                    <p className=' mt-10 font-customFont font-bold text-3xl' ref={bridge}>Alya</p>
+                    <p className=' font-customFont text-2xl'>Alya Rahmalia</p>
+                    <p className=' font-semibold'>Putri Bapak Mulyana Rahmat & Ibu Sopiah</p>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -56,7 +51,7 @@ const Bridge = () => {
                     animate={mainControls}
                     transition={{ duration: 1, delay: 0.5 }}
                     className='my-10'>
-                    <p className='font-customFont text-6xl font-bold'>&</p>
+                    <p className='font-customFont text-2xl font-bold'>Dengan</p>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -66,18 +61,11 @@ const Bridge = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 1, delay: 0.5 }}>
-                    <img className='object-cover object-center h-64 rounded-full w-64 mx-auto' src={bridge1} alt="" />
-                    <p className=' mt-4 font-customFont font-bold text-3xl'>Rian</p>
-                    <p className=' font-customFont text-2xl'>Mochamad Hesrian Zulyana, S.Psi</p>
-                    <p className=' font-semibold'>Putra Kedua Dari</p>
-                    <p className='font-semibold'>Bpk. Herman Suryadi</p>
-                    <p className='font-semibold'>dan</p>
-                    <p className='font-semibold'>ibu Erna Rohani</p>
+                    <p className=' mt-4 font-customFont font-bold text-3xl'>Dodi</p>
+                    <p className=' font-customFont text-2xl'>Dodi Setiadi</p>
+                    <p className=' font-semibold'>Putra Bapak Inan alm & Ibu Indun</p>
                 </motion.div>
             </div>
-            <svg className=' rotate-180' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#0099ff" fill-opacity="1" d="M0,64L30,64C60,64,120,64,180,53.3C240,43,300,21,360,42.7C420,64,480,128,540,160C600,192,660,192,720,160C780,128,840,64,900,48C960,32,1020,64,1080,96C1140,128,1200,160,1260,170.7C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-            </svg>
         </div>
     )
 }
