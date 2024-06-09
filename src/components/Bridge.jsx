@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion';
-import bridge1 from "../assets/male.png"
-import bridge2 from "../assets/female.png"
 
 
 const Bridge = () => {

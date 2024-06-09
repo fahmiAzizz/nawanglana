@@ -1,14 +1,11 @@
 import React, { useRef, useState, useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import Countdown from 'react-countdown-simple';
 import { motion } from 'framer-motion';
 import { MdOutlineEmail } from "react-icons/md";
 import { TbMusic, TbMusicOff } from "react-icons/tb";
 import song from '../assets/song.mp3';
-import gambar2 from "../assets/13.jpg";
-import gambar3 from "../assets/14.jpg";
-import gambar4 from "../assets/15.jpg";
+
 
 const Card = () => {
     const [isVisible, setIsVisible] = useState(true);
