@@ -63,14 +63,10 @@ const Wish = () => {
     };
 
     return (
-        <div className="h-auto max-w-screen-mobile mx-auto my-20 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#0099ff" fill-opacity="1" d="M0,64L30,64C60,64,120,64,180,53.3C240,43,300,21,360,42.7C420,64,480,128,540,160C600,192,660,192,720,160C780,128,840,64,900,48C960,32,1020,64,1080,96C1140,128,1200,160,1260,170.7C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-            </svg>
+        <div className="h-auto max-w-screen-mobile mx-auto  text-slate-50">
 
             <div >
-                <div className='bg-[#0099ff]'>
-
+                <div className='bg-white'>
                     <motion.div
                         variants={{
                             hidden: { opacity: 0 },
@@ -79,8 +75,9 @@ const Wish = () => {
                         initial='hidden'
                         animate={mainControls}
                         transition={{ duration: 1, delay: 0.50 }}
-                        className='text-3xl font-semibold text-center font-customFont'>
-                        UCAPAN & DOA
+                        className='text-3xl text-center font-customFont py-10 '>
+                        <p className='text-slate-800'>UCAPAN & DOA</p>
+                        <hr className='w-1/2 mx-auto h-1  text-[#8FBC8F] bg-[#8FBC8F]' />
                     </motion.div>
                     <motion.div
                         variants={{
@@ -90,7 +87,7 @@ const Wish = () => {
                         initial='hidden'
                         animate={mainControls}
                         transition={{ duration: 1, delay: 0.50 }}
-                        className='border rounded-md mx-8 mt-4'>
+                        className='border rounded-md mx-8 mt-4 bg-[#8FBC8F]'>
                         {/* Form untuk membuat posting baru */}
                         <form ref={wish} onSubmit={handleSubmit} className="mt-4 mx-4">
                             <div className="mb-4">
@@ -128,23 +125,26 @@ const Wish = () => {
                                     required
                                 ></textarea>
                             </div>
-                            <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" disabled={isLoading}>
+                            <button type="submit" className="bg-emerald-400 hover:bg-emerald-500 text-slate-50 font-bold py-2 px-4 rounded" disabled={isLoading}>
                                 {isLoading ? 'Loading...' : 'Kirim'}
                             </button>
                         </form>
 
                         {/* Menampilkan data dalam bentuk paragraf */}
                         {wishData ? (
-                            <div className="my-8 h-64 overflow-y-auto  mx-4 border-2 rounded-md border-blue-400">
-                                {wishData.map((wish, index) => (
-                                    <div key={index} className="py-2 px-2">
-                                        <h3 className="text-xl font-semibold">{wish.name}</h3>
-                                        <p className='text-sm '>{wish.presence === 1 ? 'Hadir' : 'Tidak Hadir'}</p>
-                                        <p>{wish.message}</p>
-                                        <p className='text-sm text-right'>{new Date(wish.created_at).toLocaleTimeString('en-US', { hour12: false })} {new Date(wish.created_at).toLocaleDateString('en-US')} </p>
-                                        <hr />
-                                    </div>
-                                ))}
+                            <div className='my-8 mx-4 border-2 rounded-md border-white '>
+                                <p className='text-2xl text-center p-2'>Ucapan dan doa</p>
+                                <div className="overflow-y-auto h-64">
+                                    {wishData.map((wish, index) => (
+                                        <div key={index} className="py-2 px-2">
+                                            <h3 className="text-xl font-semibold">{wish.name}</h3>
+                                            <p className='text-sm '>{wish.presence === 1 ? 'Hadir' : 'Tidak Hadir'}</p>
+                                            <p>{wish.message}</p>
+                                            <p className='text-sm text-right'>{new Date(wish.created_at).toLocaleTimeString('en-US', { hour12: false })} {new Date(wish.created_at).toLocaleDateString('en-US')} </p>
+                                            <hr />
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         ) : (
                             <div className="mt-8 text-center">Loading...</div>
@@ -152,10 +152,6 @@ const Wish = () => {
 
                     </motion.div>
                 </div>
-
-                <svg className=' rotate-180' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                    <path fill="#0099ff" fill-opacity="1" d="M0,64L30,64C60,64,120,64,180,53.3C240,43,300,21,360,42.7C420,64,480,128,540,160C600,192,660,192,720,160C780,128,840,64,900,48C960,32,1020,64,1080,96C1140,128,1200,160,1260,170.7C1320,181,1380,171,1410,165.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-                </svg>
             </div>
 
 
