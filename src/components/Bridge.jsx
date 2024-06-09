@@ -61,7 +61,7 @@ const Bridge = () => {
                     transition={{ duration: 1, delay: 0.5 }}>
                     <p className=' mt-4 font-customFont font-bold text-3xl'>Dodi</p>
                     <p className=' font-customFont text-2xl'>Dodi Setiadi</p>
-                    <p className=' font-semibold'>Putra Bapak Inan alm & Ibu Indun</p>
+                    <p className=' font-semibold'>Putra Bapak Inan (alm) & Ibu Indun</p>
                 </motion.div>
             </div>
         </div>
