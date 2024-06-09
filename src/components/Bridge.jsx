@@ -25,7 +25,7 @@ const Bridge = () => {
                     <p className='text-3xl font-customFont py-5'>OUR WEDDING</p>
                     <p className='font-bold'>Bissmillaahirrahmanirrahim</p>
                     {/* <p>Assalamu'alaikum Warrahmatullahi Wabarakatuh</p> */}
-                    <p> Dengan memohon Rahmat dan Ridho Allah SWT yang telah menciptakan makhluknya berpasang-pasangan, Ya Allah Perkenankanlah Kami:</p>
+                    <p> Dengan memohon Rahmat dan Ridho Allah SWT yang telah menciptakan makhluknya berpasang-pasangan, Perkenankanlah Kami:</p>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -34,7 +34,7 @@ const Bridge = () => {
                     }}
                     initial='hidden'
                     animate={mainControls}
-                    transition={{ duration: 2, delay: 1 }}
+                    transition={{ duration: 1, delay: 0.5 }}
                     className="">
                     <p className=' mt-10 font-customFont font-bold text-3xl' ref={bridge}>Alya</p>
                     <p className=' font-customFont text-2xl'>Alya Rahmalia</p>

@@ -94,13 +94,13 @@ const Akad = () => {
                     allowFullScreen
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2711329860213!2d106.82312391476876!3d-6.181638995505012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f68237ed82ff%3A0x6069e4b7fb8f5141!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1623322484067!5m2!1sen!2sid"
                     title="Lokasi Kami"
-                    className='mx-auto'
+                    className='mx-auto pt-5'
                 ></iframe>
                 <Countdown
                     targetDate={new Date('2024-06-30T00:00:00')}
                     interval={1000}
                     renderer={({ days, hours, minutes, seconds, completed }) => (
-                        <div className="bg-[#8FBC8F] p-5 rounded-lg grid grid-cols-4 gap-4 my-8">
+                        <div className="bg-[#8FBC8F] p-5 rounded-lg grid grid-cols-4 gap-4 my-8 shadow-xl">
                             <div className=" text-slate-50 text-semibold rounded-lg p-2 text-center">
                                 <div className='text-3xl font-bold'>{days}</div>
                                 <div className='text-xl'>hari</div>

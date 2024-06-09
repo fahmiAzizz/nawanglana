@@ -4,7 +4,7 @@ import Countdown from 'react-countdown-simple';
 import { motion } from 'framer-motion';
 import { MdOutlineEmail } from "react-icons/md";
 import { TbMusic, TbMusicOff } from "react-icons/tb";
-import song from '../assets/song.mp3';
+import song from '../assets/song2.mp3';
 
 
 const Card = () => {
@@ -86,7 +86,7 @@ const Card = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className={`fixed bottom-6 right-6 z-50 hover:bg-blue-500 hover:scale-110 duration-100 bg-blue-500 text-white p-4 rounded-full ${isVisible ? 'hidden' : ''} `}>
+            <div className={`fixed bottom-6 right-6 z-50 hover:bg-emerald-600 hover:scale-110 duration-100 bg-emerald-500 text-white p-4 rounded-full ${isVisible ? 'hidden' : ''} `}>
                 <div onClick={toggleAudio}>
                     {isPlaying ? (
                         <TbMusic size={28} style={{ cursor: 'pointer' }} />

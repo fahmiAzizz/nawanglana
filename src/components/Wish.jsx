@@ -125,7 +125,7 @@ const Wish = () => {
                                     required
                                 ></textarea>
                             </div>
-                            <button type="submit" className="bg-emerald-400 hover:bg-emerald-500 text-slate-50 font-bold py-2 px-4 rounded" disabled={isLoading}>
+                            <button type="submit" className="bg-emerald-500 hover:bg-emerald-600 text-slate-50 font-bold py-2 px-4 rounded" disabled={isLoading}>
                                 {isLoading ? 'Loading...' : 'Kirim'}
                             </button>
                         </form>
@@ -133,7 +133,7 @@ const Wish = () => {
                         {/* Menampilkan data dalam bentuk paragraf */}
                         {wishData ? (
                             <div className='my-8 mx-4 border-2 rounded-md border-white '>
-                                <p className='text-2xl text-center p-2'>Ucapan dan doa</p>
+                                <p className='text-2xl text-center p-2 font-customFont3'>Ucapan & doa</p>
                                 <div className="overflow-y-auto h-64">
                                     {wishData.map((wish, index) => (
                                         <div key={index} className="py-2 px-2">

@@ -52,7 +52,9 @@ const Gift = () => {
                 >
                     <p className='text-center text-3xl font-customFont '>Titip Hadiah</p>
                     <hr className='mx-auto w-1/2 m-1 text-white' style={hrStyle} />
-                    <p className='text-center my-2 px-10 '>Doa restu yang disertai dengan kasih sayang dari Bapak/Ibu sangatlah bermakna bagi kami. Dan jika memberi adalah bentuk dari cinta, Bapak/Ibu bisa memberikan hadiah secara non-tunai. Terima kasih atas kehadiran dan doa restu yang selalu menyertai langkah-langkah kami.</p>
+                    <p className='text-center my-2 px-10 '>Kehadiran dan doa restu Bapak/Ibu amat berarti bagi kami. Hadiah non-tunai dari hati Bapak/Ibu begitu berharga. Terima kasih atas cinta dan dukungan yang selalu mengiringi kami.
+
+                    </p>
                 </motion.div>
                 <motion.div
                     variants={{
