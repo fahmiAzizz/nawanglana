@@ -12,8 +12,8 @@ const Bridge = () => {
         }
     }, [isInView])
     return (
-        <div className=' text-slate-800 max-w-screen-mobile mx-auto  z-20'>
-            <div className='text-center bg-[#8FBC8F] pt-20  pb-36 px-5'>
+        <div className=' text-slate-50 max-w-screen-mobile mx-auto  z-20'>
+            <div className='text-center bg-[#8FBC8F] pt-20  pb-36  px-5'>
                 <motion.div
                     variants={{
                         hidden: { opacity: 0 },
