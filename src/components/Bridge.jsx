@@ -38,7 +38,7 @@ const Bridge = () => {
                     className="">
                     <p className=' mt-10 font-customFont font-bold text-3xl' ref={bridge}>Alya</p>
                     <p className=' font-customFont text-2xl'>Alya Rahmalia</p>
-                    <p className=' font-semibold'>Putri Bapak Mulyana Rahmat & Ibu Sopiah</p>
+                    <p className=' font-semibold'>Putri Bapak Saripin & Ibu Sopiah</p>
                 </motion.div>
                 <motion.div
                     variants={{

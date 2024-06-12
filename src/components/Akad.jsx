@@ -50,9 +50,9 @@ const Akad = () => {
                     <p className='text-3xl font-semibold text-left'>2024</p>
                 </div>
                 <div className='font-semibold '>
-                    <p>Pukul 07:00 WIB - 09:00 WIB</p>
-                    <p>xxx</p>
-                    <p className='mt-4 hover:scale-110 duration-100'><a className='bg-[#8FBC8F] text-slate-50 rounded-xl p-2 ' href="#">Cek Lokasi</a></p>
+                    <p>Pukul 09:00 WIB - 11:00 WIB</p>
+                    <p className='px-10 pt-2'>Gedung Serbaguna Desa MekarRahayu Kec MargaAsih</p>
+                    <p className='mt-4 hover:scale-110 duration-100'><a className='bg-[#8FBC8F] text-slate-50 rounded-xl p-2 ' href="https://maps.app.goo.gl/21uVyBVEgXVDiaZJ9">Cek Lokasi</a></p>
                 </div>
             </motion.div>
             <motion.div
@@ -72,9 +72,9 @@ const Akad = () => {
                     <p className='text-3xl font-semibold text-left'>2024</p>
                 </div>
                 <div className='font-semibold'>
-                    <p>Pukul 11:00 WIB - 13:30 WIB</p>
-                    <p>xxx</p>
-                    <p className='mt-4 hover:scale-110 duration-100'><a className='bg-[#8FBC8F] text-slate-50 rounded-xl p-2' href="#">Cek Lokasi</a></p>
+                    <p>Pukul 11:00 WIB - 15:30 WIB</p>
+                    <p className='px-10 pt-2'>Gedung Serbaguna Desa MekarRahayu Kec MargaAsih</p>
+                    <p className='mt-4 hover:scale-110 duration-100'><a className='bg-[#8FBC8F] text-slate-50 rounded-xl p-2' href="https://maps.app.goo.gl/21uVyBVEgXVDiaZJ9">Cek Lokasi</a></p>
                 </div>
             </motion.div>
             <motion.div
@@ -92,7 +92,7 @@ const Akad = () => {
                     height="300"
                     loading="lazy"
                     allowFullScreen
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.2711329860213!2d106.82312391476876!3d-6.181638995505012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f68237ed82ff%3A0x6069e4b7fb8f5141!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1623322484067!5m2!1sen!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3960.2730615955957!2d107.5530244!3d-6.9770741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68eeddd174638f%3A0x6f7436370e24677c!2sKantor%20Desa%20Mekar%20Rahayu!5e0!3m2!1sid!2sid!4v1718170285466!5m2!1sid!2sid"
                     title="Lokasi Kami"
                     className='mx-auto pt-5'
                 ></iframe>
