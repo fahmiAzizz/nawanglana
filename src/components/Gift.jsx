@@ -91,7 +91,7 @@ const Gift = () => {
                     <div className=' w-full' >
                         <img className='w-28' src={chip} alt="" />
                         <div className='ml-4'>
-                            <p className=''>Dodi Setiadi</p>
+                            <p className=''>Alya Rahmalia</p>
                             <p className='font-semibold'>563810130812</p>
                         </div>
                     </div>
@@ -133,7 +133,7 @@ const Gift = () => {
                     <div className=' w-full'>
                         <img className='w-28' src={chip} alt="" />
                         <div className='ml-4'>
-                            <p className=''>Dodi Setiadi</p>
+                            <p className=''>Alya Rahmalia</p>
                             <p className='font-semibold'>089667736022</p>
                         </div>
                     </div>
