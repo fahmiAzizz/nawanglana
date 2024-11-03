@@ -30,8 +30,8 @@ const Header = () => {
                 >
                     <div className='text-slate-800'>
                         <p className='text-2xl font-customFont text-with-shadow'>We Are Getting Married</p>
-                        <p className='text-5xl p-2 font-customFont text-with-shadow'>Alya & Dodi</p>
-                        <p className='text-xl font-customFont text-with-shadow z-30 '>Minggu, 30 Juni 2024</p>
+                        <p className='text-5xl p-2 font-customFont text-with-shadow'>Nawang & Maulana</p>
+                        <p className='text-xl font-customFont text-with-shadow z-30 '>Minggu, 10 November 2024</p>
                     </div>
                 </motion.div>
             </div>

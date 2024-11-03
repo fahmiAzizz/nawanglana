@@ -36,9 +36,9 @@ const Bridge = () => {
                     animate={mainControls}
                     transition={{ duration: 1, delay: 0.5 }}
                     className="">
-                    <p className=' mt-10 font-customFont font-bold text-3xl' ref={bridge}>Alya</p>
-                    <p className=' font-customFont text-2xl'>Alya Rahmalia</p>
-                    <p className=' font-semibold'>Putri Bapak Saripin & Ibu Sopiah</p>
+                    <p className=' mt-10 font-customFont font-bold text-3xl' ref={bridge}>Nawang</p>
+                    <p className=' font-customFont text-2xl'>Nawang Hapsari</p>
+                    <p className=' font-semibold'>Putri Bapak Sukarno & Ibu Sutini</p>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -59,9 +59,9 @@ const Bridge = () => {
                     initial='hidden'
                     animate={mainControls}
                     transition={{ duration: 1, delay: 0.5 }}>
-                    <p className=' mt-4 font-customFont font-bold text-3xl'>Dodi</p>
-                    <p className=' font-customFont text-2xl'>Dodi Setiadi</p>
-                    <p className=' font-semibold'>Putra Bapak Inan (alm) & Ibu Indun</p>
+                    <p className=' mt-4 font-customFont font-bold text-3xl'>Lana</p>
+                    <p className=' font-customFont text-2xl'>Maulana Pratama</p>
+                    <p className=' font-semibold'>Putra Bapak Makmur & Ibu Manti</p>
                 </motion.div>
             </div>
         </div>

@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Header />
     <Bridge />
     <Akad />
-    <Gift />
+    {/* <Gift /> */}
     <Wish />
     <Thanks />
   </React.StrictMode>,

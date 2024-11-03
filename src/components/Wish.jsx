@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion';
 import axios from 'axios';
-import DOMPurify from 'dompurify'; // Import DOMPurify
+import DOMPurify from 'dompurify';
 
 const Wish = () => {
 
@@ -23,17 +23,14 @@ const Wish = () => {
     const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
-        // Mengambil data dari API saat komponen dimuat
         axios.get('https://backend-gamma-virid.vercel.app/api/v1/wish')
             .then(response => {
-                // Mengatur data yang diterima ke dalam state
                 setWishData(response.data.data);
             })
             .catch(error => {
-                // Tangani error jika ada
                 console.error('Error:', error);
             });
-    }, []); // [] berfungsi agar useEffect hanya dijalankan sekali saat komponen dimuat
+    }, []);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -41,7 +38,7 @@ const Wish = () => {
 
         try {
             const sanitizedMessage = DOMPurify.sanitize(message);
-            // Mengirim data ke API
+
             await axios.post('https://backend-gamma-virid.vercel.app/api/v1/wish', {
                 name,
                 presence,

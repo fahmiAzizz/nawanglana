@@ -54,10 +54,10 @@ const Card = () => {
                         onClick={handleCardClick}
                     >
                         <p className="text-2xl font-customFont">We Are Getting Married</p>
-                        <p className="text-5xl font-bold font-customFont p-2">Alya & Dodi</p>
-                        <p className="text-xl font-customFont">Minggu, 30 Juni 2024</p>
+                        <p className="text-5xl font-bold font-customFont p-2">Nawang & Maulana</p>
+                        <p className="text-xl font-customFont">Minggu, 10 November 2024</p>
                         <Countdown
-                            targetDate={new Date('2024-06-30T00:00:00')}
+                            targetDate={new Date('2024-11-10T00:00:00')}
                             interval={1000}
                             renderer={({ days, hours, minutes, seconds, completed }) => (
                                 <div className="grid grid-cols-4 gap-4 mt-4">
